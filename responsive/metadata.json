@@ -1,0 +1,6 @@
+{
+  "name": "LogiCore AI - Freight & Logistics Automation",
+  "description": "Next-generation freight forwarding and supply chain automation featuring an interactive vertical zig-zag logistics conveyor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

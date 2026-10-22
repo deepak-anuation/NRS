@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    overflow-x: clip;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+    background-color: #fafbfc;
+  }
+}
+
+.font-editorial-italic {
+  font-family: 'Instrument Serif', 'Newsreader', 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.font-serif-italic {
+  font-family: 'Instrument Serif', 'Playfair Display', Georgia, serif;
+  font-style: italic;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-fraunces {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-instrument {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2.5deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-2deg);
+  }
+}
+
+.animate-float-gentle {
+  animation: float-gentle 14s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 18s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 4s ease-in-out infinite;
+}
+
+/* Subtle diagonal hatch pattern behind the Explore More CTA button as in reference */
+.pattern-diagonal-hatch {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(13, 148, 136, 0.12),
+    rgba(13, 148, 136, 0.12) 1.5px,
+    transparent 1.5px,
+    transparent 8px
+  );
+}
+
+/* Infinite Upward Slide for the Zig-Zag boxes */
+@keyframes slideUpLoop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-slide-up-infinite {
+  animation: slideUpLoop 14s linear infinite;
+  will-change: transform;
+}
+
